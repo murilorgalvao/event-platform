@@ -1,8 +1,11 @@
 {
+  "homepage": "https://murilorgalvao.github.io/event-platform/",
   "name": "event-platform",
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -10,6 +13,7 @@
   "dependencies": {
     "@apollo/client": "^3.6.8",
     "date-fns": "^2.28.0",
+    "gh-pages": "^4.0.0",
     "graphql": "^16.5.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.0.0",
